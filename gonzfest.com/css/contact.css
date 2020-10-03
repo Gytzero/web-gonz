@@ -1,0 +1,12 @@
+/* Reset sizes */
+*{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+body {
+	background: rgb(120, 214, 213);
+	color: rgb(255, 255, 255);
+	width: 100%;
+	height: 200vh;
+}

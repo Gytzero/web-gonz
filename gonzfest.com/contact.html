@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- META -->
+		<title>GF18 Revamped</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" type="png" href="./img/logo2018.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<!-- JAVASCRIPT AND STYLESHEETS -->
+		<script src="./js/navbar.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/contact.css"/>	
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/navbar.css"/>	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+
+		<!-- NAVIGATION BAR -->
+		<div class="navbar" id="Topnav">
+			<a href="./home.html"><img src="./img/LogoGF.png" class="wobble"></a>
+			<div class="wrap">
+				<div class="nhome"><a href="./home.html">Home</a></div>
+				<div class="nabout"><a href="./about.html" >About</a></div>
+				<div class="ncompetition">
+					<div class="dropdown">
+							<a href="#Competitions" class="dropbtn" onclick="dropFunction()" ontouchmove="dropFunction()">
+								Competitions <i class="fa fa-caret-down"></i>
+							</a>
+							<div class="dropdown-content" id="Dropdown" style="display: none;">
+								<a href="./competitionSD.html">SD</a>
+								<a href="./competitionSMP.html">SMP</a>
+								<a href="./competitionSMA.html">SMA</a>
+								<a href="./competitionUMUM.html">UMUM</a>
+							</div>
+					</div>
+				</div>
+				<div class="nregis"><a href="./registration.html">Registration</a></div>
+				<div class="ncontact"><a href="./contact.html">Contact</a></div>
+				<div class="rdown"><a href="javascript:void(0);" style="font-size:14px;" class="icon dropbtn" onclick="Scale()" ontouchmove="Scale()"><i class="fa fa-bars"></i> Menu</a></div>
+			</div>
+		</div>
+		<!-- NAVIGATION BAR END -->
+
+
+	</body>
+</html>

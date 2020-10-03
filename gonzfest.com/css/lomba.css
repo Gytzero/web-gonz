@@ -1,0 +1,186 @@
+/* RESET */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* BODY */
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	background-image: url("../img/BG-lomba.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -2;
+}
+
+.text{
+	line-height: 1.5;
+	margin: 70px 20vw 40px 20vw;
+	background-color: rgb(255,255,255);
+	box-shadow: 10px 10px 10px 5px rgba(36, 36, 36, 0.773);
+}
+
+/* BODY END */
+h1{
+	color: rgb(0, 0, 0);
+	font-size: 60px;
+	text-align: center;
+	margin-top: 50px;
+}
+h2{
+	color: rgb(2, 9, 99);
+	font-size: 36px;
+	text-align: center;
+}
+
+/* COLOR VALUE */
+MR{
+	color: rgb(203, 51, 48);
+}
+Ku{
+	color: rgb(254, 213, 59);
+}
+BM{
+	color: rgb(120, 214, 213);
+	text-align: center;
+}
+BT1{
+	color: rgb(0, 164, 229);
+	text-align: center;
+}
+BT2{
+	color: rgb(0, 98, 163);
+	text-align: center;
+}
+
+/* CONTENT */
+li {
+	font-size: 17px;
+	color: rgb(0, 0, 0);
+}
+.kiri{
+	text-align: left;
+}
+.sub{
+	font-weight : bold;
+	text-align: center;
+	margin-left: 7%;
+	max-width : 50vw;
+}
+
+.gambar {
+	object-position: center;
+}
+.isi {
+	text-align: justify;
+	margin-left: 10%;
+	max-width : 50vw;
+}
+.sub-isi {
+	text-align: justify;
+	margin-left: 5%;
+	max-width : 50vw;
+}
+
+/* BUTTON SECTION */
+.tombol{
+	margin: -40px 20px 10px 20px;
+	border-radius: 20px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: transparent;
+	height: 40px;
+	width: 45%;
+}
+.cancel{
+	float: left;
+}
+.cancel:hover{
+	border-color: rgb(202, 50, 47);
+	color: rgb(202, 50, 47);
+	transition-duration: .5s;
+	cursor: pointer;
+}
+.daftar{
+	margin-top: -40px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:0%;
+	margin-bottom:0%"
+}
+.daftar:hover{
+	border-color: rgb(0, 204, 0);
+	color: rgb(0, 204, 0);
+	transition-duration: .5s;
+	cursor: pointer;
+}
+.pdf-link{
+	color: rgb(0, 98, 163);
+}
+.pdf-link:hover{
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1340px){
+	.daftar{
+		margin-top: -50px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	p{
+		font-size: 16px;
+	}
+	li{
+		font-size: 14px;
+	}
+	.text{
+		margin: 0;
+		width: 100vw;
+	}
+	.sub, .isi, .sub-isi{
+		margin: 0 15px 5px 30px;
+		max-width: Calc(100vw - 40px);
+	}
+	.sub{
+		font-size: 15px;
+	}
+	.isi{
+		font-size: 13px;
+	}
+	.isi p{
+		font-size: 14px;
+	}
+	.sub-isi{
+		font-size: 12px;
+	}
+	.tombol{
+		width: 90%;
+		margin: 0 0 0 5%;
+		padding: 0;
+	}
+	.cancel{
+		float: none;
+		margin-bottom: 10px;
+	}
+	.daftar{
+		float: none;
+	}
+	.pdf-link{
+		/* font-weight: bolder; */
+	}
+}

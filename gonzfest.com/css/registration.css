@@ -1,0 +1,541 @@
+/* Reset sizes */
+
+*{
+
+	margin: 0;
+
+	padding: 0;
+
+	font-size: 16px;
+
+}
+
+body {
+
+	height: auto;
+
+	color: rgb(236, 236, 236);
+
+}
+
+.subtext{
+
+	font-size: 13px;
+
+	color: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+/* BACKGROUND AND BOX */
+
+.bg-registration{
+
+	background-image: url(../img/BG-regis.jpg);
+
+	background-repeat: no-repeat;
+
+	background-position: center;
+
+	background-size: cover;
+
+	height: 50%;
+
+	padding-top: 60px;
+
+	padding-bottom: 60px;
+
+	background-attachment: fixed;
+
+}
+
+.wrapper{
+
+	background-color: rgba(58, 57, 57, 0.714);
+
+	box-shadow: 10px 10px 10px 5px rgba(36, 36, 36, 0.773);
+
+	width: auto;
+
+	margin: 0 25% auto 25%;
+
+	padding: 40px 40px 20px 40px;
+
+	height: auto;
+
+}
+
+.wrapper h1{
+
+	font-size: 2.7vw;
+
+	text-align: center;
+
+	margin-left: -10px;
+
+}
+
+.wrapper h2{
+
+	font-size: 1.5vw;
+
+	text-align: center;
+
+	margin-left: -10px;
+
+}
+
+
+
+/* INPUT FIELD */
+
+input[type=text], input[type=email]{
+
+	width: 99%;
+
+	border: none;
+
+	border-bottom: 2px solid rgb(221, 221, 221);
+
+	background: transparent;
+
+	padding: 2px;
+
+	color: rgb(221, 221, 221);
+
+}
+
+input[type=text]:focus, input[type=email]:focus{
+
+	transition-duration: .3s;
+
+	border-color: rgb(10, 116, 216);
+
+}
+
+input[type=text]:invalid, input[type=email]:invalid{
+
+	box-shadow: none;
+
+}
+
+
+
+
+
+/* DROPDOWN SECTION */
+
+.kelas{
+
+	width: 48%;
+
+	margin-right: 2%;
+
+	border: 2px solid rgb(221, 221, 221);
+
+}
+
+.lomba{
+
+	width: 48%;
+
+	border:	2px solid rgb(221, 221, 221);
+
+}
+
+select{
+
+	color: rgb(221, 221, 221);
+
+	font-weight: 600;
+
+	font-size: 14px;
+
+	padding: 2px;
+
+	height: 35px;
+
+	margin-top: 2px;
+
+	background: transparent;
+
+	cursor: pointer;
+
+}
+
+select option{
+
+	color: rgb(0, 0, 0);
+
+}
+
+select:focus{
+
+	border: 2px solid rgb(10, 116, 216);
+
+}
+
+select:invalid{
+
+	box-shadow: none;
+
+}
+
+
+
+
+
+/* TEXT-AREA */
+
+.peserta{
+
+	font-size: 17px;
+
+	font-family: Helvetica, sans-serif, Arial;
+
+	width: 99%;
+
+	resize: none;
+
+	padding: 2px;
+
+	border: 2px solid rgb(221, 221, 221);
+
+	background-color: transparent;
+
+	color: rgb(221, 221, 221);
+
+}
+
+.peserta:focus{
+
+	border-color: rgb(10, 116, 216);
+
+}
+
+.peserta:invalid{
+
+	box-shadow: none;
+
+}
+
+
+
+
+
+/* 	CHECKBOX SECTION */
+
+.setuju{
+
+	font-size: 14px;
+
+}
+
+.setuju a{
+
+	color: rgb(10, 116, 216);
+
+	transition: .3s;
+
+}
+
+.setuju a:hover{
+
+	text-decoration: underline;
+
+}
+
+.red{
+
+	color: rgb(202, 50, 47);
+
+}
+
+.lil{
+
+	font-size: 13px;
+
+}
+
+/* Customize the label (the container) */
+
+.container {
+
+  display: block;
+
+  position: relative;
+
+  padding-left: 35px;
+
+  margin-bottom: 12px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  -webkit-user-select: none;
+
+  -moz-user-select: none;
+
+  -ms-user-select: none;
+
+  user-select: none;
+
+}
+
+.container a{
+
+	color: rgb(10, 116, 216);
+
+}
+
+/* Hide the browser's default checkbox */
+
+.container input {
+
+  position: absolute;
+
+  opacity: 0;
+
+  cursor: pointer;
+
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+
+	position: absolute;
+
+  top: 6px;
+
+  left: 0;
+
+  height: 20px;
+
+  width: 20px;
+
+	background-color: transparent;
+
+	border: 2px solid rgb(221, 221, 221);
+
+}
+
+/* Blue border when hovering */
+
+.container:hover input ~ .checkmark {
+
+ 	border: 2px solid rgb(10, 116, 216);
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+
+  content: "";
+
+  position: absolute;
+
+  display: none;
+
+}
+
+/* Show the checkmark when checked */
+
+.container input:checked ~ .checkmark:after {
+
+  display: block;
+
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+
+  left: 6px;
+
+  top: 2px;
+
+  width: 5px;
+
+  height: 10px;
+
+  border: solid rgb(0, 132, 255);
+
+  border-width: 0 4px 4px 0;
+
+  -webkit-transform: rotate(45deg);
+
+  -ms-transform: rotate(45deg);
+
+  transform: rotate(45deg);
+
+}
+
+
+.subsub{
+	color: rgb(254, 211, 57);
+}
+
+
+/* BUTTON SECTION */
+
+.tombol{
+
+	color: rgb(221, 221, 221);
+
+	font-weight: bold;
+
+	border: 2px solid rgb(221, 221, 221);
+
+	background-color: transparent;
+
+	height: 40px;
+
+	width: 48%;
+
+	cursor: pointer;
+
+}
+
+.cancel{
+
+	float: left;
+
+}
+
+.cancel:hover{
+
+	border-color: rgb(202, 50, 47);
+
+	color: rgb(202, 50, 47);
+
+	transition-duration: .5s;
+
+}
+
+.submit{
+
+	float: right;
+
+}
+
+.submit:hover{
+
+	border-color: rgb(0, 204, 0);
+
+	color: rgb(0, 204, 0);
+
+	transition-duration: .5s;
+
+}
+
+.baru{
+	text-align: center;
+	font-size: 14px;
+	display: none;
+}
+
+.waiting{
+	text-align: center;
+	font-size: 14px;
+	color: rgb(254, 211, 57);
+}
+.extra{
+	text-align: right;
+
+	font-size:14px;
+
+}
+
+.cntct{
+
+	width:15px;
+
+	display: inline-block;
+
+}
+
+
+
+@media screen and (max-width: 600px){
+
+	.bg-registration{
+
+		padding: 50px 0 30px 0;
+
+	}
+
+	.wrapper{
+
+		width: Calc(100% - 20px);
+
+		box-shadow: none;
+
+		margin: 0 0 0 0;
+
+		padding: 10px;
+
+	}
+
+	.wrapper h1{
+
+		font-size: 35px;
+
+	}
+
+	.wrapper h2{
+
+		font-size: 20px;
+
+	}
+
+	.kelas{
+
+		width: 100%;
+
+		margin-right: 0;
+
+	}
+
+	.lomba{
+
+		width: 100%;
+
+	}
+
+	.peserta{
+
+		width: 98%;
+
+	}
+
+	.cancel{
+
+		width: 99%;
+
+		float: none;
+
+		visibility: hidden;
+
+	}
+
+	.submit{
+
+		width: 99%;
+
+		float: none;
+
+		margin-bottom: 3px;
+
+	}
+
+	.baru{
+		display: block;
+	}
+}
+

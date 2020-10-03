@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<!-- META -->
+
+		<title>Online Registration - GonzFest 2018</title>
+
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="icon" type="png" href="./img/logo2018.png">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+		<!-- JAVASCRIPT AND STYLESHEETS -->
+
+		<script src="./js/navbar.js?v=1"></script>
+
+		<script src="./js/form.js?v=2"></script>
+
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css?v=1">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/registration.css?v=9"/>
+
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/navbar.css?v=1"/>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+
+
+
+
+
+		<!-- NAVIGATION BAR -->
+
+		<div class="navbar" id="Topnav">
+
+			<a href="./index.html"><img src="./img/LogoGF.png" class="wobble"></a>
+
+			<div class="wrap">
+
+				<div class="nhome"><a href="./index.html">Home</a></div>
+
+				<div class="nabout"><a href="./info.html" >Rules</a></div>
+
+				<div class="ncompetition">
+
+					<div class="dropdown">
+
+							<a class="dropbtn" onclick="dropFunction()" ontouchmove="dropFunction()">
+
+								Competitions <i class="fa fa-caret-down"></i>
+
+							</a>
+
+							<div class="dropdown-content" id="Dropdown" style="display: none;">
+
+								<a href="./competitionSD.html">SD</a>
+
+								<a href="./competitionSMP.html">SMP</a>
+
+								<a href="./competitionSMA.html">SMA</a>
+
+								<a href="./competitionUMUM.html">UMUM</a>
+
+							</div>
+
+					</div>
+
+				</div>
+
+				<div class="nregis"><a href="./registration.html">Registration</a></div>
+
+				<div class="rdown"><a href="javascript:void(0);" style="font-size:14px;" class="icon dropbtn" onclick="Scale()" ontouchmove="Scale()"><i class="fa fa-bars"></i> Menu</a></div>
+
+			</div>
+
+		</div>
+
+		<!-- NAVIGATION BAR END -->
+
+
+
+		<!-- FORM SEGMENT -->
+
+		<div class="bg-registration">
+
+			<div class="wrapper">
+
+				<h1>
+
+					ONLINE REGISTRATION FORM
+
+				</h1>
+
+				<h2>
+
+					Gonzaga Festival 2018
+
+				</h2><br>
+
+				<p class="baru subsub"><i>! Harap menggunakan desktop saat melakukan registrasi <i>online</i> untuk performa lebih baik !</i></p><br>
+				<form name="Form" action="./php/insert.php" enctype="multipart/form-data" method="POST">
+
+					<h5>Nama Sekolah</h5>
+
+					<p class="subtext"><span class="red">*</span>(wajib diisi untuk peserta lomba SD, SMP, dan SMA)</p>
+
+					<input type="text" name="namaSekolah">
+
+					<br><br><h5>Lomba<span class="red">*</span></h5>
+
+					<p class="subtext">Harap membaca peraturan lomba yang ingin diikuti</p>
+
+					<select name="kelas" id="kelas" class="kelas" onchange=dynamicdropdown(this.options[this.selectedIndex].value); required>
+
+							<option value="" selected disabled hidden> Kategori </option>
+
+							<option value="SD">SD</option>
+
+							<option value="SMP">SMP</option>
+
+							<option value="SMA">SMA</option>
+
+							<option value="UMUM">UMUM</option>
+
+						</select>
+
+						<script type="text/javascript" language="JavaScript">
+
+							document.write('<select class="lomba" name="lomba" id="lomba" required><option value="" selected disabled style="color:grey;">Lomba </option></select>')
+
+						</script><br><br>
+
+
+
+					<h5>Nama Penanggung jawab<span class="red">*</span></h5>
+
+					<input type="text" name="penanggungJawab"><br><br>
+
+
+
+					<h5>Nomor Handphone 1<span class="red">*</span></h5>
+
+					<input type="text" name="noHP1" required><br><br>
+
+
+
+					<h5>Nomor Handphone 2</h5>
+
+					<input type="text" name="noHP2"><br><br>
+
+
+
+					<h5>ID LINE 1<span class="red">*</span></h5>
+
+					<input type="text" name="idLine1" required><br><br>
+
+
+
+					<h5>ID LINE 2</h5>
+
+					<input type="text" name="idLine2"><br><br>
+
+
+
+					<h5>Alamat Email 1<span class="red">*</span></h5>
+
+					<input type="email" name="eMail1" required><br><br>
+
+
+
+					<h5>Alamat Email 2</h5>
+
+					<input type="email" name="eMail2" ><br><br>
+
+
+
+					<h5>Nama Peserta<span class="red">*</span></h5>
+
+					<p class="subtext">Jika jumlah peserta lebih dari satu, mohon nama peserta diberi nomor</p>
+
+					<textarea name="peserta" class="peserta" cols="57" rows="11" required></textarea><br><br><br>
+
+
+
+					<!-- Images Upload -->
+
+
+
+					<label><i>Scan</i> Surat Keterangan Sekolah<br><span class="lil"><span class="red">*</span>(wajib dicantumkan untuk peserta lomba SD, SMP, dan SMA)</span></label><br>
+
+					<input type="file" name="sks[]" multiple="multiple" accept="Images/*"/><br><br>
+					<h5 class="subtext subsub">Syarat-syarat lain meliputi pas foto ukuran 3 x 4 dan kartu pelajar/identitas dapat dikirim ke <i>email</i>: regisgf2018@gmail.com dengan <i>Subject</i>: "NamaSekolah(untuk lomba SD, SMP, dan SMA)-NamaPenanggungjawab-Lombayangdiikuti" paling lambat tanggal 7 September 2018.</h5>
+
+					<!-- CHECKBOX -->
+
+					<br><br>
+
+					<label class="container">
+
+						<input type="checkbox" required>Saya menyetujui dan bersedia mengikuti segala peraturan yang berlaku selama Gonzaga Festival 2018</a>
+
+						<span class="checkmark"></span>
+
+					</label>
+
+					<br>
+
+					<input class="tombol submit" type="submit" value="Send" name="btnSubmit">
+
+				</form>
+
+				<button class="tombol cancel" onclick="location.href='./home.html'" ontouchmove="location.href='./home.html'">Home</button>
+
+				<br><br>
+				<p class="waiting">Silahkan tunggu sampai muncul halaman "<b><i>Registration Successful</i></b>" setelah menekan tombol <i>"Send"</i></p>
+				<br><br><p class="extra"><span class="red">*</span>Siapkan materai 6000 (enam ribu) sebanyak 2 (dua) lembar untuk dibawa pada saat <i>technical meeting</i> 14 September 2018.<br>
+
+					<br>Untuk informasi seputar pendaftaran dapat menghubungi :<br>
+
+					<img src="./img/gmail.png" alt="Email" class="cntct"> regisgf2018@gmail.com<br>
+
+					<img src="./img/line1.png" alt="Line" class="cntct"> @regisgf2018</p>
+
+			</div>
+
+		</div>
+
+		<!-- FORM SEGMENT END -->
+
+
+
+	</body>
+
+</html>
+
